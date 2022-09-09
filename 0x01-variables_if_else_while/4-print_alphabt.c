@@ -3,7 +3,7 @@
 
 /**
  * main Entry point
- * Description:Use `putchar` to print all letters except letters 'q' and 'e'.
+ * Description: Use `putchar` to print all letters except letters 'q' and 'e'.
  * Return: Always 0 (success)
  */
 
