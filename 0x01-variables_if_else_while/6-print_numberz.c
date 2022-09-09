@@ -2,10 +2,10 @@
 /**
  * main - main block
  * Description: print all numbers of base 10, starting from 0.
- * Do not use any variable of type char.
- * Only use `putchar` to print to console.
+ * You are not allowed to use any variable of type char.
+ * You can only use `putchar` to print to console.
  * You can only use `putchar` twice.
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
