@@ -17,7 +17,7 @@ int main(void)
 
 	i = 0;
 
-	while (i <100)
+	while (i < 100)
 	{
 		j = i % 10; /*single digits */
 		k = i / 10; /*double digits */
