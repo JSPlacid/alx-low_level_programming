@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main Entry point
- * Description: Use `putchar` to print all letters except letters 'q' and 'e'.
- * Return: Always 0 (success)
+ * main - Entry point
+ * Description: Use `putchar` to print all letters except 'q' and 'e'.
+ * Return: 0
  */
 
 int main(void)
@@ -17,5 +17,5 @@ int main(void)
 		c++;
 	}
 	putchar('\n');
-	return (0);
+	return(0);
 }
