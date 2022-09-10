@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main -Entry point
- * Description: write a program that prints all possible combinations of two digits.
+ * Description: A program that prints all possible combos of two digits.
  * Numbers must be separated by comma followed by a space.
  * Print only the smallest combination of two digits.
  * Numbers should be printed in ascending order, with two digits.
