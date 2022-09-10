@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
 /**
  * main - Entry point
- * Description: Prints all possible combos of two two-digit numbers.
- * The numbers should range from 0 to 99.
+ * Description: Prints all possible combos of two digit numbers.
  * The two numbers should be separated by a space.
- * Return: 0
+ * Return: Always 0
  */
+
 int main(void)
 {
 	int i, j;
@@ -32,8 +34,8 @@ int main(void)
 
 				if (!(a == 9 && b == 8))
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
