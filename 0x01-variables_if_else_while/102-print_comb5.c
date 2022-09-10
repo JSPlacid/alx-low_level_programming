@@ -19,22 +19,27 @@ int main(void)
 		a = i / 10; /*doubles fnum*/
 		b = i % 10; /*singles fnum*/
 
-		for (j = i + 1; j < 100; j++)
+		for (j = 0; j < 100; j++)
 		{
+			if (i < j && i != j)
+			{
 			c = j / 10; /*doubles snum*/
 			d = j % 10; /*singles snum*/
 
 				putchar(a + '0');
 				putchar(b + '0');
-				putchar(',');
+				putchar(' ');
 				putchar(c + '0');
 				putchar(d + '0');
+
 				if (!(a == 9 && b == 8))
 				{
 					putchar(',');
 					putchar(' ');
-				}			
+				}
+			}			
 		}
 	}
+	putchar(10);
 	return (0);
 }
