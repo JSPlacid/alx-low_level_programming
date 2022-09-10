@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  * Description: Prints all possible combos of two two-digit numbers.
@@ -16,7 +17,7 @@ int main(void)
 		a = i / 10; /*doubles fnum*/
 		b = i % 10; /*singles fnum*/
 
-		for(j = 0; j < 100; j ++)
+		for (j = 0; j < 100; j ++)
 		{
 			c = j / 10; /*doubles snum*/
 			d = j % 10; /*singles snum*/
