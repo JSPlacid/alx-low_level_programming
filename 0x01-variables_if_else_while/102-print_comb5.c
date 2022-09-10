@@ -14,7 +14,7 @@ int main(void)
 	int i, j;
 	int a, b, c, d;
 
-	for (i = 0; i < 99; i++);
+	for (i = 0; i < 100; i++);
 	{
 		a = i / 10; /*doubles fnum*/
 		b = i % 10; /*singles fnum*/
@@ -28,11 +28,10 @@ int main(void)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
-				putchar(32);
+				putchar(',');
 				putchar(c + '0');
 				putchar(d + '0');
-
-				if (!(a == 9 && b == 8))
+				if (a != 98 || b != 99)
 				{
 					putchar(',');
 					putchar(' ');
@@ -40,6 +39,5 @@ int main(void)
 			}
 		}
 	}
-	putchar(10);
 	return (0);
 }
