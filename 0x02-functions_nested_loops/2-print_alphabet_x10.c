@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include <main.h>
 /**
  * main - Entry point
  * Description: prints 10 times the alphabets in lowercase, followed by a new line.
  * Return: Nothing.
  */
 
-void print_alpha_x10(void)
+void print_alphabet_x10(void)
 {
 	int i;
 	int alp;
@@ -14,8 +14,8 @@ void print_alpha_x10(void)
 	{
 		for(alp = 'a'; alp <= 'z' alp++)
 		{
-			putchar(alp);
+			_putchar(alp);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
