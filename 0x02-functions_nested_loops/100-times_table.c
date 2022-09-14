@@ -5,12 +5,9 @@
  * @n: The multiplication table requested.
  * Return: Nothing.
  */
-
 void print_times_table(int n)
 {
-	int x = 0;
-	int y;
-	int z;
+	int x = 0, y, z;
 
 	if (n > 15 || n < 0)
 		return;
@@ -39,7 +36,6 @@ void print_times_table(int n)
 			}
 			else
 				_putchar(z + '0');
-
 			if (y != n)
 			{
 				_putchar(',');
