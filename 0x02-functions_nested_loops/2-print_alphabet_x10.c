@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - main point
  * Description: prints 10 times the alphabets in lowercase, followed by a new line.
@@ -9,11 +8,11 @@
 void print_alphabet_x10(void)
 {
 	int i;
-	int alp;
+	int c;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for(alp = 'a'; alp <= 'z'; alp++)
+		for(c = 'a'; c <= 'z'; c++)
 		{
 			_putchar(alp);
 		}
