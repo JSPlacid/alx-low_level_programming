@@ -3,7 +3,7 @@
  * jack_bauer - prints time table in format HH:MM
  * Return: sum of two numbers
  */
-void jack_bauer(void)
+void jack_baur(void)
 {
 	int h, m;
 
