@@ -1,13 +1,16 @@
 #include "main.h"
 /**
- * print_times_tables - print the time table for n.
+ * print_times_tables - print the time table for n
  * Description: if `n` is greater than 15 or less than 0, return null.
  * @n: The multiplication table requested.
  * Return: Nothing.
  */
+
 void print_times_table(int n)
 {
-	int i = 0, y, z;
+	int x = 0;
+	int y;
+	int z;
 
 	if (n > 15 || n < 0)
 		return;
@@ -28,7 +31,7 @@ void print_times_table(int n)
 				_putchar(z / 10 + '0');
 				_putchar(z % 10 + '0');
 			}
-			else if (y != 0);
+			else if (y != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
