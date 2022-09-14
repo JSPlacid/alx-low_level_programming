@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * jack_baur - prints time table in format HH:MM
+ * jack_bauer - prints time table in format HH:MM
  * Return: sum of two numbers
  */
-void jack_baur(void)
+void jack_bauer(void)
 {
 	int h, m;
 
