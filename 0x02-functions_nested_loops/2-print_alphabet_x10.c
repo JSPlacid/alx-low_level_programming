@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * print_alphabet_x10 - prints alphabets in lowercase 10x.
  * Return: Nothing.
  */
