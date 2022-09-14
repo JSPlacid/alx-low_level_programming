@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - main point
+ * print_alphabet - check description
  * Description: prints alphabets in lowercase 10x, followed by a new line.
  * Return: Nothing.
  */
