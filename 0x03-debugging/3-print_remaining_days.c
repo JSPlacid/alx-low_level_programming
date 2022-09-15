@@ -12,7 +12,8 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	/**leap year, when it is divisible by 100
+	/**
+	 *leap year, when it is divisible by 100
 	 * 400, or 4 evenly
 	 */
 
