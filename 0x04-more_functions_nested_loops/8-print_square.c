@@ -1,10 +1,12 @@
 #include "main"
+
 /**
  * print_square - prints a square, followed by a new line.
  * @size: size of square.
  * Description: only use _putchar function to print
  * use # to print square
  */
+
 void print_square(int size)
 {
 	int x, y;
