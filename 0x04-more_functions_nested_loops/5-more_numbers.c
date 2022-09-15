@@ -2,6 +2,7 @@
 /**
  * more_numbers - prints numbers from 0 to 14 ten places each on new line
  * Description: use _putchar only 3 times
+ * Return Always 0
  */
 
 void more_numbers(void)
