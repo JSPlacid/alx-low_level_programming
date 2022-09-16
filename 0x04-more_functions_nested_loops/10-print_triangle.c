@@ -31,7 +31,6 @@ void print_triangle(int size)
 		_putchar('\n');
 		c++;
 	}
-
 	if (size <= 0)
 		_putchar('\n');
 }
