@@ -10,7 +10,7 @@
  * Return: 0
  */
 
-int main(void)
+int main(int i)
 {
 	int i = 1;
 
@@ -32,6 +32,6 @@ int main(void)
 
 			printf("%d", i);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
