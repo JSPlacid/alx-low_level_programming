@@ -10,7 +10,7 @@
  * Return: 0
  */
 
-int main(int i)
+int main(void)
 {
 	int i = 1;
 
