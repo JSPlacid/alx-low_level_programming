@@ -11,10 +11,9 @@
 
 int main(void)
 {
-	int i;
-
-	i = 1;
-	while (i <= 100)
+	int i = 1;
+	
+	for (; i < 101; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
@@ -32,11 +31,7 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-
-		if (i != 100)
-			printf(" ");
-		i++;
 	}
-	printf("\n");
+	printf("Buzz\n");
 	return (0);
 }
