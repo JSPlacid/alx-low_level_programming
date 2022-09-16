@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_number - a function that prints an integer.
  * You can only use _putchar function to print
@@ -6,6 +7,7 @@
  * You are not allowed to use arrays or pointers
  * You are not allowed to hard-code special values
  * @n: input integer
+ * Return: Nothing
  */
 
 void print_number(int n)
