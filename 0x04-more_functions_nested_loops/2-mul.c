@@ -4,10 +4,10 @@
  * mul - multiplies two integers
  * @a: first operand.
  * @b: second operand.
- * return: a * b
+ * return: Nothing
  */
 
-int mul(int a, int b)
+void mul(int a, int b)
 {
 	return (a * b);
 }
