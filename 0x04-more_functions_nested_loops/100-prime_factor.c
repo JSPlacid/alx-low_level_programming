@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 /**
  * main - Entry point
  * Description: finds and prints the largest prime factor of the
