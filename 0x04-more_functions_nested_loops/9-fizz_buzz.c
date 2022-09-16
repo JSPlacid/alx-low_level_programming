@@ -16,21 +16,20 @@ int main(void)
 	for (; i < 101; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-		{
+
 			printf("FizzBuzz");
-		}
+
 		else if (i % 3 == 0)
-		{
+
 			print("Fizz");
-		}
+
 		else if (i % 5 == 0)
-		{
+
 			print("Buzz");
-		}
+
 		else
-		{
+
 			printf("%d", i);
-		}
 	}
 	printf("Buzz\n");
 	return (0);
