@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - Entry point
  * Description: prints the numbers from 1 to 100
@@ -11,7 +13,7 @@
 int main(void)
 {
 	int i = 1;
-	
+
 	for (; i < 101; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
