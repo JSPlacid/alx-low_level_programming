@@ -40,7 +40,7 @@ void print_number(int n)
 		if (m == 1)
 		{
 			_putchar(num % 10 + '0');
-			num = - 1;
+			num = -1;
 		}
 		else
 		{
