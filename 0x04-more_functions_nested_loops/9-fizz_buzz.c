@@ -12,7 +12,8 @@
 
 int main(void)
 {
-	int i = 1;
+	int i;
+	i = 1;
 
 	for (i = 1; i <= 100; i++)
 	{
