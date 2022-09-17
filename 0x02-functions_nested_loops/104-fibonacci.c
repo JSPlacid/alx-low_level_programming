@@ -2,12 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - main entry
+ * numLength - returns the length of string
  * Description: finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line.
  * The numbers should be separated by comma, followed by a space
  * Do not use any other library (You can’t use GMP etc…)
- * numLength - rturns the length of string
  * @num: operand number
  * Return: number of digits
  */
@@ -34,7 +33,7 @@ int numLength(int num)
 
 int main(void)
 {
-	unsigned long f1 =1, f2 = 2, tmp, mx = 100000000, f1o = 0, tmpo = 0;
+	unsigned long f1 = 1, f2 = 2, tmp, mx = 100000000, f1o = 0, tmpo = 0;
 	short int i = 1, initial0s;
 
 	while (i <= 98)
