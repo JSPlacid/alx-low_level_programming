@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdio.h>
-#define LARGEST 10000000000
+
 /**
  * main - main entry
  * Description: finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line.
  * The numbers should be separated by comma, followed by a space
  * Do not use any other library (You can’t use GMP etc…)
+ * numLength - rturns the length of string
  * @num: operand number
  * Return: number of digits
  */
@@ -34,17 +35,17 @@ int numLength(int num)
 int main(void)
 {
 	unsigned long f1 =1, f2 = 2, tmp, mx = 100000000, f1o = 0, tmpo = 0;
-	short int i = 1, initials0s;
+	short int i = 1, initial0s;
 
 	while (i <= 98)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
-		initials0s = numLength(mx) - 1 - numLength(f1);
-		while (f1o > 0 && initials0s > 0)
+		initial0s = numLength(mx) - 1 - numLength(f1);
+		while (f1o > 0 && initial0s > 0)
 		{
 			printf("%i", 0);
-			initials0s--;
+			initial0s--;
 		}
 		printf("lu", f1);
 
