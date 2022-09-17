@@ -7,35 +7,59 @@
  * starting with 1 and 2, followed by a new line.
  * The numbers should be separated by comma, followed by a space
  * Do not use any other library (You can’t use GMP etc…)
+ * @num: operand number
+ * Return: number of digits
+ */
+int numLength(int num)
+{
+	int length = 0;
+
+	if (!num)
+	{
+		return (1);
+	}
+	while (num)
+	{
+		num = num / 10;
+		length += 1;
+	}
+	return (length);
+}
+
+/**
+ * main - prints the first 98 fibonacci sequence
  * Return: 0
  */
+
 int main(void)
 {
-	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
-	unsigned long int hold1, hold2, hold3;
-	int count;
+	unsigned long f1 =1, f2 = 2, tmp, mx = 100000000, f1o = 0, tmpo = 0;
+	short int i = 1, initials0s;
 
-	printf("%lu, %lu, ", bk1, bk2);
-	for (count = 2; count < 98; count++)
+	while (i <= 98)
 	{
-		if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
+		if (f1o > 0)
+			printf("%lu", f1o);
+		initials0s = numLength(mx) - 1 - numLength(f1);
+		while (f1o > 0 && initials0s > 0)
 		{
-			hold1 = (bk1 + bk2) / LARGEST;
-			hold2 = (bk1 + bk2) / LARGEST;
-			hold3 = fr1 + fr2 + hold1;
-			fr1 = fr2, fr2 = hold3;
-			bk1 = bk2, bk2 = hold2;
-			printf("%lu%010lu", fr2, bk2);
+			printf("%i", 0);
+			initials0s--;
 		}
-		else
-		{
-			hold2 = bk1 + bk2;
-			bk1 = bk2, bk2 = hold2;
-			printf("%lu", bk2);
-		}
-		if (count != 97)
+		printf("lu", f1);
+
+		tmp = (f1 + f2) % mx;
+		tmpo = f1o + f2o + (f1 + f2) / mx;
+		f1 = f2;
+		f1o = f2o;
+		f2 = tmp;
+		f2o = tmpo;
+
+		if (i != 98)
 			printf(", ");
+		else
+			printf("\n");
+		i++;
 	}
-	printf("\n");
 	return (0);
 }
