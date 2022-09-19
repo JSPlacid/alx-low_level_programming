@@ -28,7 +28,8 @@ int _atoi(char *s)
 			if (s[i + 1] < 48 || s[i + 1] > 57)
 				break;
 		}
-	}if (p < 0)
+	}
+	if (p < 0)
 		h *= -1;
-		return (h);
+	return (h);
 }
