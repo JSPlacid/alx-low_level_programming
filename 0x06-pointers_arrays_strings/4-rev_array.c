@@ -7,7 +7,7 @@
 
 void reverse_array(int *a, int n)
 {
-	iint i, h;
+	int i, h;
 
 	for (i = 0; i < (n / 2); i++)
 	{
