@@ -5,9 +5,9 @@
  * Return: c
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *c)
 {
-	int i;
+	int i, c;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
