@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * _strncat - concatenate two strings
+ * src does not need to be null-terminated if it
+ * contains n or more bytes
  * @dest: string
  * @src: string
  * @n: number of elements to concatenate in
