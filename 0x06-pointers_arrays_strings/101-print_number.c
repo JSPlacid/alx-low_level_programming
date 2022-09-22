@@ -12,7 +12,7 @@ void print_number(int n)
 
 	expo = 1;
 	/*check for negatives*/
-	if (n <= 0)
+	if (n >= 0)
 		res = n * -1;
 	else
 	{
