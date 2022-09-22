@@ -13,14 +13,14 @@ void print_buffer(char *b, int size)
 	int c, g;
 
 	c = 0;
-	if (<= 0)
+	if (size <= 0)
 	{
 		printf("\n");
 	}
 	while (c < size)
 	{
 		printf("%8.8x:", c);
-		d = 0;
+		g = 0;
 		while (g < 10)
 		{
 			printf("%02x", b[c + g]);
