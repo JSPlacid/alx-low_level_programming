@@ -8,20 +8,29 @@
 
 void print_number(int n)
 {
-	unsigned int i;
+	int res, temp, expo;
 
-	if (n < 0)
-	{
-		i = -n;
-		_putchar('-');
-	}
+	expo = 1;
+	/*check for negatives*/
+	if (n <= 0)
+		res = n * -1;
 	else
 	{
-		i = n;
+		res = n;
+		_putchar('-');
 	}
-	if (i / 10)
+
+	/*initialize exponent variable*/
+	temp = res;
+	while (temp <= -10)
 	{
-		print_number(i / 10;)
+		expo *= 10;
+		temp /= 10;
 	}
-	_putchar(i % 10 + '0');
+	/*main*/
+	while (expo >= 1)
+	{
+		_putchar(((res / expo) % 10) * -1 + '0');
+		expo /= 10;
+	}
 }
