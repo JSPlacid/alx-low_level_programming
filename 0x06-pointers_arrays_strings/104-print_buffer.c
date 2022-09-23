@@ -19,8 +19,7 @@ void print_buffer(char *b, int size)
 	}
 	while (c < size)
 	{
-
-		printf("8.8x: ", c);
+		printf("8.8x:", c);
 		d = 0;
 		while (d < 10)
 		{
