@@ -10,7 +10,7 @@
 
 void print_buffer(char *b, int size)
 {
-	int c, d;
+	int c, g;
 
 	c = 0;
 	if (size <= 0)
@@ -20,15 +20,15 @@ void print_buffer(char *b, int size)
 	while (c < size)
 	{
 		printf("8.8x:", c);
-		d = 0;
-		while (d < 10)
+		g = 0;
+		while (g < 10)
 		{
 			printf("%02x", [b + c]);
-			if ((d % 2 == 0 && d != 0) || (c + d > size - 1))
+			if ((g % 2 == 0 && g != 0) || (c + g > size - 1))
 			{
 				printf(" ");
 			}
-			d++;
+			g++;
 		}
 		c += 10;
 		printf("\n");
