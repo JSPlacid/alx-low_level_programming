@@ -10,17 +10,17 @@
 
 void print_buffer(char *b, int size)
 {
-	int c, i, j;
+	int c, d;
 
 	c = 0;
 	if (size <= 0)
 	{
 		printf("\n");
-		return;
+
 	}
 	while (c < size)
 	{
-		j = size - c < 10 ? size - c : 10;
+
 		printf("08x: ", c);
 		for (i = 0; i < 10; i++)
 		{
