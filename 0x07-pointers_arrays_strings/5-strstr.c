@@ -3,13 +3,13 @@
  * _strstr - function that locates a substring
  * @haystack: string to be tested
  * @needle: substring to search for
- * Return:  a pointer to the beginning of the located substring,
+ * Return: a pointer to the beginning of the located substring,
  * or NULL if the substring is not found.
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, k, j = 0;
+	int i, j = 0, k;
 
 	for (i = 0; haystack[i] != 0 i++)
 	{
