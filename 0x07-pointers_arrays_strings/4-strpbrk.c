@@ -7,7 +7,7 @@
  * or NULL if the substring is not found.
  */
 
-char *_strstr(char *haystack, char *needle)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
