@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strstr -  a function that locates a substring.
+ * _strstr - a function that locates a substring.
  * @s: string to search for
  * @accept: string with pattern to be matched
  * Return:  a pointer to the beginning of the located substring
