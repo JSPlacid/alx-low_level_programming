@@ -31,7 +31,7 @@ int check(char *str, int len, int count)
 			return (0);
 }
 /**
- * is_pallindrome - determines whether a string is a pallindrome
+ * is_pallindrome - checks whether a string is a pallindrome
  * @s: string to be determined
  * Return: if a string is a palindrome return 1 else 0
  */
