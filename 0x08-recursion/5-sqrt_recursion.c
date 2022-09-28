@@ -3,27 +3,30 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: int number
- * Return: the square root of n
+ * Return: natural square root of number base
  */
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	return (_sqrt(1, n));
+	return (halp(n, 1));
 }
 
 /**
- * _sqrt - find square root
- * @prev: previous value
- * @root: square root value
- * Return: the square root
+ * halp - helper function to solve _sqrt_recursion
+ * @c: number to determine square root
+ * @i: incrementer to compare against `c`
+ * Return: If n does not have a natural square root,
+ * the function should return -1
  */
-int _sqrt(int prev, int root)
+int halp(int c, int i)
 {
-	if (prev > root)
+	int square;
+
+	square = i * i;
+	if (square == c)
+		return (i);
+	else if (square < c)
+		return (halp(c, i + 1));
+	else
 		return (-1);
-	else if (prev * prev == root)
-		return (prev);
-	return (_sqrt(prev + 1, root));
 }
