@@ -17,7 +17,7 @@ int _strlen_recursion(char *s)
 
 /**
  * check - helper function for is_pallindrome
- * @string: the string
+ * @str: the string
  * @len: string length
  * @count: recursion counter
  * Return: 1 if a string is a palindrome and 0 if not.
