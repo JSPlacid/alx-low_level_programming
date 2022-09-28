@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * _strlen_recursion - returns the length of a  string
  * @s: string to count
@@ -30,6 +31,7 @@ int check(char *str, int len, int count)
 		return (check(str, len - 1, count + 1));
 			return (0);
 }
+
 /**
  * is_pallindrome - checks whether a string is a pallindrome
  * @s: string to be determined
