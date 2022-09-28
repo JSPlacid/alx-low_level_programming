@@ -22,7 +22,7 @@ int _strlen_recursion(char *s)
  * @count: recursion counter
  * Return: 1 if a string is a palindrome and 0 if not.
  */
-int check(int *str, int len, int count)
+int check(char *str, int len, int count)
 {
 	if (count >= len)
 		return (1);

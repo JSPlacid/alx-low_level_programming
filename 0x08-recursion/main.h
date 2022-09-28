@@ -10,4 +10,4 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int halp(int c, int i);
 int checker(int n, int base);
-int check(int *str, int len, int count);
+int check(char *str, int len, int count);
