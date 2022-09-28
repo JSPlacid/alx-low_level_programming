@@ -5,7 +5,7 @@
  * Description: multiplies two numbers
  * @a: first operand
  * @b: second operand
- * return: returns result
+ * Return: returns result
  */
 
 int mul(int a, int b)
