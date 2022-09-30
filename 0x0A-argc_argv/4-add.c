@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		for (i = 1; argv[i]; i++)
 		{
 			num = strtol(argv[i], &p, 10);
-			if (!*p)
+			if (*p != 0)
 				total += num;
 			else
 			{
