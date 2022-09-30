@@ -13,23 +13,22 @@
  */
 int main(int argc, char *argv[])
 {
-	int total, i;
-	char p;
-	int num;
+	int i;
+	char p = 0;
+	int sum = 0;
 
-	total = 0;
-	if (argc > 1)
+	if (argc == 1)
 	{
-		for (i = 1; argv[i]; i++)
+		printf("0\n");
+		return (0);
+	}
+	for (i = 1; i < argv[i]; i++)
+	{
+		sum = strtol(argv[i], &p, 10);
+		if (*p != 0)
 		{
-			num = strtol(argv[i], &p, 10);
-			if (*p != 0)
-				total += num;
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
 	}
 	printf("%d\n", total);
