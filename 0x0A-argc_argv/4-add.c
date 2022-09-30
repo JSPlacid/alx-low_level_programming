@@ -24,7 +24,8 @@ int main(int argc, char *argv[])
 			num = strtol(argv[i], &p, 10);
 			if (!*p)
 				total += num;
-			else {
+			else
+			{
 				printf("Error\n");
 				return (1);
 			}
