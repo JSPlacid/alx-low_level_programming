@@ -6,7 +6,7 @@
  * main - multiply two operands passed to main
  * @argc: argument count
  * @argv: argument vector
- * Returns: 1 if error else 0
+ * Return: 1 if error else 0
  */
 
 int main(int argc, char *argv[])
