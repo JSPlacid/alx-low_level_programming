@@ -11,42 +11,32 @@
 char *argstostr(int ac, char **av)
 {
 	char *str;
-	int i, j, k;
-	int c = 0;
+	int len = 0, i = 0, j, k = 0;
 
-	if (ac == 0 || av == NULL)
+	if (ac <= 0 || av == NULL)
 		return (NULL);
 	/*counts the length of every character in the argument*/
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; 1; j++)
-		{
-			c++;
-			if (av[i][j] == != '\0')
-				break;
-		}
+		for (j = 0; av[i][j]; j++)
+			len++;
+		len++;
 	}
-	c += 1;
-	str = (char *) malloc(c);
+	len++;
+	str = malloc(len * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 
-	k = 0;
-	/* concats every argument to the string str */
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; 1; j++)
+		for (j = 0; av[i][j]; j++)
 		{
 			str[k] = av[i][j];
 			k++;
-
-			if (av[i][j] == '\0')
-			{
-				str[k - 1] = '\n';
-				break;
-			}
 		}
+		str[k] = '\n';
+		k++;
 	}
 	str[k] = '\0';
 	return (str);
