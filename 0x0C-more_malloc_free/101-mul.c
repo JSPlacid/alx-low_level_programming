@@ -4,6 +4,7 @@
 /**
  * main - check the code
  * Description: multiplies two integers
+ * @atoi: converts string to integer
  * @argc: number of arguments
  * @argv: argument vector
  * Return: 0
