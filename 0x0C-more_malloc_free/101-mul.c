@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <mathlib.h>
+#include "main.h"
+
+int is_digit(char *s);
+int _strlen(char *s);
+void errors(void);
 
 /**
  * _isdigit - checks if a string has digits
@@ -8,43 +13,42 @@
  * Return: 0 if all digits else 1
  */
 
-int _isdigit(char *argv)
+int _isdigit(char *s)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
-	while (argv[i])
+	for (; s[i] != '\0'; i++)
 	{
-		if (argv[i] >= '0' && argv[i] <= '9')
-			i++;
-		else
-			return (1);
+		if (s[i] < '0' || s[i] > '9')
+			return (0);
 	}
-	return (0);
+	return (1);
 }
 
 /**
- * _atoi - converts a string of ASCII digits to the values
- * they represent
- * @s: pointer to the source string
- * Return: digits value
+ * _strlen - calculates the length of a string
+ * excluding the null terminator
+ * @s: string to check for
+ * Return: length of string as integer
  */
 
-int _atoi(char *s)
+int _strlen(char *s)
 {
-	int i, result;
+	int i = 0, c = 0;
 
-	i = result = 0;
-	while (s[i])
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			result *= 10;
-			result += (s[i] - '0');
-		}
-		i++;
-	}
-	return (result);
+	for (i = 0; s[i] != '\0'; i++)
+		c++;
+	return (c);
+}
+
+/**
+ * errors - prints out Error if one emerge with status 98
+ * Return: nothing
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
 }
 
 /**
