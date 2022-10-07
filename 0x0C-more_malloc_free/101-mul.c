@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _digit - checks if a string has digits
+ * _isdigit - checks if a string has digits
  * @argv: pointer to current item in argument
  * Return: 0 if all digits else 1
  */
@@ -14,7 +14,7 @@ int _isdigit(char *argv)
 	i = 0;
 	while (argv[i])
 	{
-		if (argv[i] >= '0' &&argv[i] <= '9')
+		if (argv[i] >= '0' && argv[i] <= '9')
 			i++;
 		else
 			return (1);
