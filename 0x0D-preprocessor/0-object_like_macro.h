@@ -1,3 +1,4 @@
-#ifndef SIZE_H
+#ifndef SIZE
+#define SIZE_H
 #define SIZE 1024
 #endif
