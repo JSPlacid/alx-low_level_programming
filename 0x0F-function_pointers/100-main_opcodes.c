@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
+
 	bytes = atoi(argv[1]);
 
 	if (bytes < 0)
@@ -26,10 +27,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
+
 	for (i = 0; i < bytes; i++)
 	{
 		opcode = *(unsigned char *)address;
-		printf("%,2x", opcode);
+		printf("%.2x", opcode);
 
 		if (i == bytes - 1)
 			continue;
