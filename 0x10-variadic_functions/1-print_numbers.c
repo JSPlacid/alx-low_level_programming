@@ -1,11 +1,12 @@
 #include "variadic_functions"
-#include <stdio.h>
 #include <stdarg.h>
+
 /**
  * print_numbers - print each number with a separator,
  * followed by a new line
  * @separator: string to be printed between numbers
  * @n: number of args passed
+ * Return: 0
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
