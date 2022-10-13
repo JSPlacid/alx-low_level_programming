@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * main - prints the result of simple operatoions
+ * main - prints the result of simple operations
  * @argc: argument count
  * @argv: argument vector
  * Return: 0
  */
 
-int main(int__attribute__((__unused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;

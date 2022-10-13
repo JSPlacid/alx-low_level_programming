@@ -10,7 +10,7 @@ int op_mod(int a, int b);
  * op_add - returns the sum of operands a and b
  * @a: first operand
  * @b: second operand
- * Returns: value of a + b
+ * Returns: sum of a and b
  */
 
 int op_add(int a. int b)
@@ -22,7 +22,7 @@ int op_add(int a. int b)
  * op_sub - returns the difference of two operands
  * @a: first operand
  * @b: second operand
- * Return: values of a - b
+ * Return: difference of a and b
  */
 
 int op_sub(int a, int b)
@@ -34,7 +34,7 @@ int op_sub(int a, int b)
  * op_mul - multiplies two operands
  * @a: first operand
  * @b: second operand
- * Return: value os a * b
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -45,7 +45,7 @@ int op_mul(int a, int b)
  * op_div - divides two operands
  * @a: first operand
  * @b: second operand
- * Return: value of a / b
+ * Return: quotient of a and b
  */
 
 int op_div(int a, int b)
