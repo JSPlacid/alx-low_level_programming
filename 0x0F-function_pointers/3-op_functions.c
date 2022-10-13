@@ -10,10 +10,10 @@ int op_mod(int a, int b);
  * op_add - returns the sum of operands a and b
  * @a: first operand
  * @b: second operand
- * Returns: sum of a and b
+ * Return: sum of a and b
  */
 
-int op_add(int a. int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
