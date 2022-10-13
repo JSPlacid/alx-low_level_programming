@@ -2,8 +2,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - print each number with a separator,
- * followed by a new line
+ * print_numbers - print each number with a separator
  * @separator: string to be printed between numbers
  * @n: number of args passed
  * Return: 0
