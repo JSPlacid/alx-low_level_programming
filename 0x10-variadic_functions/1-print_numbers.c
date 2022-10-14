@@ -1,5 +1,5 @@
 #include <stdarg.h>
-#include "variadic_functions"
+#include "variadic_functions.h"
 
 /**
  * print_numbers - print each number with a separator
