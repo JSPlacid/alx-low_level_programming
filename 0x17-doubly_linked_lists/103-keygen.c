@@ -16,6 +16,7 @@ int f4(char *usrn, int len)
 	unsigned int rand_num;
 
 	ch = *usrn;
+
 	vch = 0;
 
 	while (vch < len)
@@ -26,7 +27,6 @@ int f4(char *usrn, int len)
 	}
 	srand(ch ^ 14);
 	rand_num = rand();
-
 	return (rand_num & 63);
 }
 
