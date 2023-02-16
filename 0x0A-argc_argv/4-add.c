@@ -1,82 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-#include <string.h>
 
 /**
- * _atoi - converts a string to an integer
- * @s: string to convert
- * Return: the int converted from the string
- */
-
-int _atoi(char *s)
-{
-	int i, d, n, len, f, digit;
-
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	while (i < len && f == 0)
-	{
-		if (s[i] == '-')
-			++d;
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			digit = s[i]i - '0';
-			if (d % 2)
-				digit = -digit;
-			n = n * 10 + digit;
-			f = 1;
-			if (s[i + 1] < '0' || s[i + 1] > '9')
-				break;
-			f = 0;
-		}
-		i++;
-	}
-	if (f == 0)
-		return (0);
-	return (n);
-}
-
-/**
- * main - adds two positive operands
- * @argc: argument count
- * @argv: argument vector
- * Return: 0, else 1
+ * main - Prints the addition of positive numbers,
+ *        followed by a new line.
+ * @argc: The number of arguments passed to the program.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ *         Else - 0.
  */
 
 int main(int argc, char *argv[])
 {
-	int sum, num, i, j, k;
+	int num1, num2, sum = 0;
 
-	sum = 0;
-
-	for (i = 1; i < argc; i++)
+	for (num1 = 1; num1 < argc; num1++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (num2 = 0; argv[num1][num2]; num2++)
 		{
-			if (argv[i][j] > '9' || argv[i][j] < '0')
+			if (argv[num1][num2] < '0' || argv[num1][num2] > '9')
 			{
-				puts("Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
-	}
-	for (k = 1; k < argc; k++)
-	{
-		num = _atoi(argv[k]);
-		if (num >= 0)
-		{
-			sum += num;
-		}
+		sum = sum + atoi(argv[num1]);
 	}
 	printf("%d\n", sum);
 	return (0);
 }
+
